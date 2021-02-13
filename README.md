@@ -1,1 +1,1 @@
-# javascript-memory-match-game
+# Javascript Memory Match Game
