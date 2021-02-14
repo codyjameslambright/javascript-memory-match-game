@@ -81,6 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('You found a matching pair!');
       cards[optionOneId].setAttribute('src', 'images/found.png');
       cards[optionTwoId].setAttribute('src', 'images/found.png');
+      cards[optionOneId].removeEventListener('click', flipCard);
+      cards[optionTwoId].removeEventListener('click', flipCard);
       cardsWon.push(cardsChosen);
     } else {
       cards[optionOneId].setAttribute('src', 'images/blank.png');
